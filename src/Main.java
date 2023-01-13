@@ -6,6 +6,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
 
     public static void task1 () {
@@ -111,5 +112,17 @@ public class Main {
         float massBreakfast = mass1Banana * countBanana + mass100Milk * countMilk + massIseCreamBrick * countIseCreamBrick + mass1Eggs * countEggs;
         float massBreakfastGramm = massBreakfast * 1000.0F;
         System.out.println("Вес одного завтрака " + massBreakfastGramm + " грамм, или " + massBreakfast + " килограмм");
+    }
+
+    public static void task7 () {
+        System.out.println("Задача 7");
+
+        short massNeedDrop = 7000;
+        short massNeedDropMinInDay = 250;
+        short massNeedDropMaxInDay = 500;
+        int countDayMin = massNeedDrop / massNeedDropMinInDay;
+        int countDayMax = massNeedDrop / massNeedDropMaxInDay;
+        int countDayMiddle = massNeedDrop / ((massNeedDropMaxInDay + massNeedDropMinInDay) / 2);
+        System.out.println("На снижение веса спортсмену потребуется от " + countDayMax + " до " + countDayMin + " дней, в среднем потребуется " + countDayMiddle + " дней");
     }
 }
