@@ -3,6 +3,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
 
     public static void task1 () {
@@ -55,5 +56,28 @@ public class Main {
         int lno = okl / oku;
 
         System.out.println("На каждого ученика рассчитано " + lno + " листов бумаги.");
+    }
+
+    public static void task4 () {
+        System.out.println("Задача 4");
+
+        byte perfomance = 16;
+        byte time20Min = 20;
+        short timeDay = 1440;
+        short time3Day = 1440 * 3;
+        int time30Day = 1440 * 30;
+        int perfomanceInMin = perfomance / 2;
+        int okruglenie1 = timeDay / 1440;
+        int okruglenie2 = time3Day / 1440;
+        int okruglenie3 = time30Day / 1440;
+
+        int perfomanceIn20Min = perfomanceInMin * time20Min;
+        System.out.println("За " + time20Min + " минут машина произвела " + perfomanceIn20Min + " штук бутылок");
+        int perfomanceInDay = perfomanceInMin * timeDay;
+        System.out.println("За " + okruglenie1 + " день машина произвела " + perfomanceInDay + " штук бутылок");
+        int perfomanceIn3Day = perfomanceInMin * time3Day;
+        System.out.println("За " + okruglenie2 + " дня машина произвела " + perfomanceIn3Day + " штук бутылок");
+        int perfomanceIn30Day = perfomanceInMin * time30Day;
+        System.out.println("За " + okruglenie3 + " дней машина произвела " + perfomanceIn30Day + " штук бутылок");
     }
 }
