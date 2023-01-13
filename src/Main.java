@@ -98,7 +98,7 @@ public class Main {
     }
 
     public static void task6 () {
-        System.out.println("Задача 5");
+        System.out.println("Задача 6");
 
         float mass1Banana = 0.08F;
         byte countBanana = 5;
