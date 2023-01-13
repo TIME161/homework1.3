@@ -7,6 +7,7 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
     }
 
     public static void task1 () {
@@ -124,5 +125,31 @@ public class Main {
         int countDayMax = massNeedDrop / massNeedDropMaxInDay;
         int countDayMiddle = massNeedDrop / ((massNeedDropMaxInDay + massNeedDropMinInDay) / 2);
         System.out.println("На снижение веса спортсмену потребуется от " + countDayMax + " до " + countDayMin + " дней, в среднем потребуется " + countDayMiddle + " дней");
+    }
+
+    public static void task8 () {
+        System.out.println("Задача 8");
+
+        int salaryMasha = 67760;
+        int salaryDenis = 83690;
+        int salaryKris = 76230;
+        byte increaseSalary = 10;
+        byte montsInYear = 12;
+        int newSalaryMasha = salaryMasha + salaryMasha / increaseSalary;
+        int newSalaryDenis = salaryDenis + salaryDenis / increaseSalary;
+        int newSalaryKris = salaryKris + salaryKris / increaseSalary;
+        int salaryMashaYear = salaryMasha * montsInYear;
+        int salaryDenisYear = salaryDenis * montsInYear;
+        int salaryKrisYear = salaryKris * montsInYear;
+        int newSalaryMashaYear = newSalaryMasha * montsInYear;
+        int newSalaryDenisYear = newSalaryDenis * montsInYear;
+        int newSalaryKrisYear = newSalaryKris * montsInYear;
+        int salaryMashaUp = newSalaryMashaYear - salaryMashaYear;
+        int salaryDenisUp = newSalaryDenisYear - salaryDenisYear;
+        int salaryKrisUp = newSalaryKrisYear - salaryKrisYear;
+
+        System.out.println("Маша теперь получает " + newSalaryMashaYear + " рублей. Годовой доход вырос на " + salaryMashaUp + " рублей.");
+        System.out.println("Денис теперь получает " + newSalaryDenisYear + " рублей. Годовой доход вырос на " + salaryDenisUp + " рублей.");
+        System.out.println("Кристина теперь получает " + newSalaryKrisYear + " рублей. Годовой доход вырос на " + salaryKrisUp + " рублей.");
     }
 }
