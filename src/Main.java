@@ -5,6 +5,7 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
     }
 
     public static void task1 () {
@@ -94,5 +95,21 @@ public class Main {
         int brownJar = allJar / needJarOneClass * needBrownOneClass;
         System.out.println("В школе, где " + classNumber + " классов, нужно " + whiteJar + " банок белой краски и " + brownJar + " банок коричневой краски");
 
+    }
+
+    public static void task6 () {
+        System.out.println("Задача 5");
+
+        float mass1Banana = 0.08F;
+        byte countBanana = 5;
+        float mass100Milk = 0.105F;
+        byte countMilk = 2;
+        float massIseCreamBrick = 0.1F;
+        byte countIseCreamBrick = 2;
+        float mass1Eggs = 0.07F;
+        byte countEggs = 4;
+        float massBreakfast = mass1Banana * countBanana + mass100Milk * countMilk + massIseCreamBrick * countIseCreamBrick + mass1Eggs * countEggs;
+        float massBreakfastGramm = massBreakfast * 1000.0F;
+        System.out.println("Вес одного завтрака " + massBreakfastGramm + " грамм, или " + massBreakfast + " килограмм");
     }
 }
