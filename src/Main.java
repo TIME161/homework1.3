@@ -4,6 +4,7 @@ public class Main {
         task2();
         task3();
         task4();
+        task5();
     }
 
     public static void task1 () {
@@ -79,5 +80,19 @@ public class Main {
         System.out.println("За " + okruglenie2 + " дня машина произвела " + perfomanceIn3Day + " штук бутылок");
         int perfomanceIn30Day = perfomanceInMin * time30Day;
         System.out.println("За " + okruglenie3 + " дней машина произвела " + perfomanceIn30Day + " штук бутылок");
+    }
+
+    public static void task5 () {
+        System.out.println("Задача 5");
+
+        byte allJar = 120;
+        byte needWhiteOneClass = 2;
+        byte needBrownOneClass = 4;
+        int needJarOneClass = needWhiteOneClass + needBrownOneClass;
+        int classNumber = allJar / needJarOneClass;
+        int whiteJar = allJar / needJarOneClass * needWhiteOneClass;
+        int brownJar = allJar / needJarOneClass * needBrownOneClass;
+        System.out.println("В школе, где " + classNumber + " классов, нужно " + whiteJar + " банок белой краски и " + brownJar + " банок коричневой краски");
+
     }
 }
